@@ -1,1 +1,1 @@
-# bryo-gads-2020-projects
+# Brian's GAD submissions 
