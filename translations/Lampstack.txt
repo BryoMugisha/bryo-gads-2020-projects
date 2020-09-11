@@ -1,0 +1,45 @@
+#Google Cloud Fundamentals: Getting Started with Cloud Marketplace
+
+#1 Use Cloud Marketplace to deploy a LAMP stack using compute engine instance
+
+-In the GCP Console, on the Navigation menu (Navigation menu), click Marketplace.
+
+-In the search bar, type LAMP
+
+-In the search results, click LAMP Certified by Bitnami.
+
+-If you choose another LAMP stack, such as the Google Click to Deploy offering, the lab instructions will not work as expected.
+
+-On the LAMP page, click Launch.
+
+-For Zone, select the deployment zone that Qwiklabs assigned to you.
+
+-Click Deploy.
+
+
+#2.verify your deployment
+
+-When the deployment is complete, click the Site address link in the right pane.
+
+-Close the congratulations browser tab.
+
+-On the GCP Console, under Get started with LAMP Certified by Bitnami, click SSH.
+
+-Execute the following command:
+
+	cd /opt/bitnami
+
+-Execute the following command tp execute the phpinfo script:
+
+	sudo sh -c 'echo "<?php phpinfo(); ?>" > apache2/htdocs/phpinfo.php'
+
+	exit
+
+-Open a new browser tab.
+
+-Type the following URL, and replace SITE_ADDRESS with the URL in the Site address field in the right pane of the lampstack page.
+
+	http://SITE_ADDRESS/phpinfo.php
+
+-Close the phpinfo tab.
+
